@@ -1,6 +1,6 @@
 ---
 name: tapestry
-description: Unified content extraction and action planning. Use when user says "tapestry <URL>" or wants to extract content from any URL and create an action plan. Automatically detects content type (YouTube video, article, PDF) and processes accordingly.
+description: Unified content extraction and action planning. Use when user says "tapestry <URL>", "weave <URL>", "help me plan <URL>", "extract and plan <URL>", "make this actionable <URL>", or similar phrases indicating they want to extract content and create an action plan. Automatically detects content type (YouTube video, article, PDF) and processes accordingly.
 allowed-tools:
   - Bash
   - Read
@@ -18,9 +18,15 @@ This is the **master skill** that orchestrates the entire Tapestry workflow:
 
 Activate when the user:
 - Says "tapestry [URL]"
-- Wants to "extract and plan from [URL]"
-- Provides a URL and asks to "make it actionable"
+- Says "weave [URL]"
+- Says "help me plan [URL]"
+- Says "extract and plan [URL]"
+- Says "make this actionable [URL]"
+- Says "turn [URL] into a plan"
+- Provides a URL and asks to "learn and implement from this"
 - Wants the full Tapestry workflow (extract → plan)
+
+**Keywords to watch for**: tapestry, weave, plan, actionable, extract and plan, make a plan, turn into action
 
 ## How It Works
 
@@ -391,7 +397,7 @@ echo "🎯 Next: Review your action plan and ship Rep 1!"
 
 ## Usage Examples
 
-### Example 1: YouTube Video
+### Example 1: YouTube Video (using "tapestry")
 
 ```
 User: tapestry https://www.youtube.com/watch?v=dQw4w9WgXcQ
@@ -409,10 +415,10 @@ Claude:
 ✅ Complete! When will you ship Rep 1?
 ```
 
-### Example 2: Article
+### Example 2: Article (using "weave")
 
 ```
-User: tapestry https://example.com/how-to-build-saas
+User: weave https://example.com/how-to-build-saas
 
 Claude:
 🧵 Tapestry Workflow Starting...
@@ -428,10 +434,10 @@ Claude:
 ✅ Complete! When will you ship Rep 1?
 ```
 
-### Example 3: PDF
+### Example 3: PDF (using "help me plan")
 
 ```
-User: tapestry https://example.com/research-paper.pdf
+User: help me plan https://example.com/research-paper.pdf
 
 Claude:
 🧵 Tapestry Workflow Starting...

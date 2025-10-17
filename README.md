@@ -111,9 +111,12 @@ The simplest way to use Tapestry skills. One command extracts content and create
 
 ```
 "tapestry https://www.youtube.com/watch?v=VIDEO_ID"
-"tapestry https://example.com/article"
-"tapestry https://example.com/paper.pdf"
+"weave https://example.com/article"
+"help me plan https://example.com/paper.pdf"
+"make this actionable https://blog.com/post"
 ```
+
+**All these phrases work**: tapestry, weave, help me plan, extract and plan, make this actionable
 
 The skill will:
 1. Detect content type (YouTube/article/PDF)
